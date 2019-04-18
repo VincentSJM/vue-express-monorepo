@@ -1,4 +1,4 @@
-import { gql } from 'apollo-server-express';
+import { gql } from "apollo-server-express";
 
 // The GraphQL schema
 const typeDefs = gql`
@@ -11,11 +11,11 @@ const typeDefs = gql`
 // A map of functions which return data for the schema.
 const resolvers = {
   Query: {
-    hello: () => 'world'
+    hello: () => "world"
   }
 };
 
 export {
   typeDefs,
   resolvers
-}
+};
