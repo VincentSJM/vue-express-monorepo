@@ -8,13 +8,19 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import ApolloClient from 'apollo-boost';
+import gql from 'graphql-tag';
+
+const client = new ApolloClient();
 
 @Component({})
 export default class About extends Vue {
-  apiData: any = null;
-  async hitApi() {
-    const resp = await fetch('/api/hello');
-    this.apiData = await resp.json();
+  public apiData: any = null;
+  public async hitApi() {
+    const resp = await client.query({
+      query: gql`{hello}`,
+    });
+    this.apiData = resp.data;
   }
 }
 </script>

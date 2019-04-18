@@ -14,7 +14,10 @@
     "vue-class-component": "^7.0.2",
     "vue-property-decorator": "^8.1.0",
     "vue-router": "^3.0.3",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "apollo-boost": "0.3.1",
+    "graphql":"14.2.1",
+    "graphql-tag":"^2.10.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.6.0",
