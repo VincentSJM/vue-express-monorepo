@@ -1,0 +1,14 @@
+{
+  "name": "vue-express-monorepo",
+  "private": true,
+  "scripts": {
+    "build": "lerna run build",
+    "start": "cd packages/server && yarn start"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.13.3"
+  }
+}
